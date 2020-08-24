@@ -1,0 +1,10 @@
+-- CREATE PROJECT
+
+-- RUN PROJECT
+php artisan serve
+
+-- INSTALL Laravel UI
+composer require laravel/ui
+php artisan ui vue --auth
+npm istall
+npm run dev
