@@ -19,19 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Test">
-      <change afterPath="$PROJECT_DIR$/Console.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blogvel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blogvel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Login View added and some packs.." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,7 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598290607704</updated>
       <workItem from="1598290608938" duration="370000" />
-      <workItem from="1598291564917" duration="2436000" />
+      <workItem from="1598291564917" duration="2916000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1598291833999</created>
@@ -193,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598291833999</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Login View added and some packs..">
+      <created>1598294627560</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598294627560</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,16 +208,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Login View added and some packs.." />
+    <option name="LAST_COMMIT_MESSAGE" value="Login View added and some packs.." />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="260" key="Vcs.Push.Dialog.v2" timestamp="1598291845358">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="570" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598291845358" />
-    <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598291810089">
+    <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598294393286">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598291810089" />
+    <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598294393286" />
   </component>
 </project>
