@@ -6,5 +6,15 @@ php artisan serve
 -- INSTALL Laravel UI
 composer require laravel/ui
 php artisan ui vue --auth
-npm istall
+npm install
 npm run dev
+npm run watch
+
+-- 3º
+npm install --save @fortawesome/fontawesome-free
+
+
+-- IMPORTANT
+php artisan config:cache
+
+- DATABASE
