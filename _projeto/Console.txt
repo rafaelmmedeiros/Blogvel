@@ -14,9 +14,11 @@ npm run watch
 -- 3º
 npm install --save @fortawesome/fontawesome-free
 
-
 -- IMPORTANT
 php artisan config:cache
 
 - DATABASE
 php artisan migrate
+
+- Create a Entity with all!
+php artisan make:model Article -a

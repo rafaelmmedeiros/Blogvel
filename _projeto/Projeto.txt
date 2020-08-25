@@ -1,3 +1,5 @@
+---- TODOS UPLOAD TERÂO as pastas do node e vendor retiradas.
+----STEPS
 Enviroment - Done
 Login - Done
 Bootstrap - Done
