@@ -1,0 +1,13 @@
+Enviroment - Done
+Login - Done
+Bootstrap - Done
+Vue - Done
+
+- TODO
+CRUD Blog Entity
+Image Upload
+CRUD Comments
+User Control
+
+- Bonus
+Publish
