@@ -2,12 +2,13 @@ Enviroment - Done
 Login - Done
 Bootstrap - Done
 Vue - Done
+Initial Route - Done
 
 - TODO
-CRUD Blog Entity
-Image Upload
-CRUD Comments
-User Control
+CRUD Blog Entity - Doing
+Image Upload - Wiil be a challenge...
+CRUD Comments - After all
+User Control - Let´s see laravel power(Roles and guards)
 
 - Bonus
-Publish
+Publish - Maybe...
