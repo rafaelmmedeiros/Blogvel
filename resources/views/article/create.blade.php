@@ -29,12 +29,14 @@
                             <input class="btn btn-primary mt-4" type="submit" value="Save Article">
                         </form>
 
-                        <a class="btn btn-primary float-right" href="/article"><i class="fas fa-arrow-circle-up"></i>
-                            Back</a>
-
                     </div>
-
                 </div>
+
+                <div class="mt-2">
+                    <a class="btn btn-primary float-right" href="/article"><i class="fas fa-arrow-circle-up"></i>
+                        Back</a>
+                </div>
+
             </div>
         </div>
     </div>

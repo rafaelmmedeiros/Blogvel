@@ -6,8 +6,10 @@ Bootstrap - Done
 Vue - Done
 Initial Route - Done
 
-- TODO
 CRUD Blog Entity - Doing
+
+----TODO
+Rellations - Importante thing to do
 Image Upload - Wiil be a challenge...
 CRUD Comments - After all
 User Control - Let´s see laravel power(Roles and guards)
