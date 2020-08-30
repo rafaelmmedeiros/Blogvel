@@ -1,4 +1,4 @@
----- TODOS UPLOAD TERÂO as pastas do node e vendor retiradas.
+Pastas Vendor e Node retiradas, devido ao tamanho.
 ----STEPS
 Enviroment - Done
 Login - Done

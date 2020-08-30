@@ -10,7 +10,7 @@
                 <div class="card-body">
 
 
-                    {{ __('Here goes your blog!!!') }}
+                    {{ __('Here goes your last article!!!') }}
                 </div>
             </div>
         </div>

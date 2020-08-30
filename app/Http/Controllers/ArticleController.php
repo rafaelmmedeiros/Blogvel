@@ -28,24 +28,38 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+        return view('article.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required|min:5',
+            'description' => 'required|min:25'
+        ]);
+
+        $article = new Article([
+            'title' => $request['title'],
+            'description' => $request['description'],
+        ]);
+        $article->save();
+
+        return $this->index()->with([
+            'message_success' => 'Article <b>' . $article->title . ' </b>created with success'
+        ]);
+
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Article  $article
+     * @param \App\Article $article
      * @return \Illuminate\Http\Response
      */
     public function show(Article $article)
@@ -56,7 +70,7 @@ class ArticleController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Article  $article
+     * @param \App\Article $article
      * @return \Illuminate\Http\Response
      */
     public function edit(Article $article)
@@ -67,8 +81,8 @@ class ArticleController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Article  $article
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Article $article
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Article $article)
@@ -79,7 +93,7 @@ class ArticleController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Article  $article
+     * @param \App\Article $article
      * @return \Illuminate\Http\Response
      */
     public function destroy(Article $article)

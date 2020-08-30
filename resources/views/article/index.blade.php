@@ -17,8 +17,17 @@
                         </ul>
                     </div>
 
+
                 </div>
+                <div class="mt-2">
+                    <a class="btn btn-success btn-sm" href="/article/create">
+                        <i class="fas fa-newspaper"></i>
+                        Create new Article
+                    </a>
+                </div>
+
             </div>
         </div>
+    </div>
     </div>
 @endsection

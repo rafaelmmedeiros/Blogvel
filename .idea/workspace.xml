@@ -19,13 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Page Creations">
-      <change afterPath="$PROJECT_DIR$/resources/views/article/index.blade.php" afterDir="false" />
+    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="List Article for blog">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/article/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Console.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_projeto/Console.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projeto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_projeto/Projeto.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projeto/Projeto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_projeto/Projeto.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/article/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/startingPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startingPage.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +170,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -192,7 +197,9 @@
       <workItem from="1598290608938" duration="370000" />
       <workItem from="1598291564917" duration="3153000" />
       <workItem from="1598294873983" duration="4721000" />
-      <workItem from="1598363861573" duration="14088000" />
+      <workItem from="1598363861573" duration="14645000" />
+      <workItem from="1598800625626" duration="179000" />
+      <workItem from="1598800856291" duration="9947000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1598291833999</created>
@@ -264,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598376233528</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="List Article for blog">
+      <created>1598383677879</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598383677879</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +306,8 @@
     <MESSAGE value="Corrections" />
     <MESSAGE value="Corrections git" />
     <MESSAGE value="Page Creations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Page Creations" />
+    <MESSAGE value="List Article for blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="List Article for blog" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598382996077">
@@ -307,18 +322,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="658" y="157" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598377645392" />
-    <state x="570" y="260" key="Vcs.Push.Dialog.v2" timestamp="1598376257155">
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1598383705820">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="570" y="260" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598376257155" />
-    <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598297743793">
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598383705820" />
+    <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598823269845">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598297743793" />
-    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup" timestamp="1598383315873">
+    <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598823269845" />
+    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup" timestamp="1598808883363">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598383315873" />
+    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598808883363" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
