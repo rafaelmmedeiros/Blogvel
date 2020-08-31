@@ -29,3 +29,14 @@ php artisan make:seeder UserSeeder
 
 - Create a Entity with all!
 php artisan make:model Article -a
+
+- TINKER
+php artisan tinker
+App\User::find(1)
+App\User::find(1)->articles
+App\User::find(1)->articles->pluck('title')
+
+App\Article::find(10)
+App\Article::find(10)->user
+
+EXIT
