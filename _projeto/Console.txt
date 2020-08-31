@@ -16,6 +16,7 @@ php artisan make:migration add_user_id_to_articles_table
 
 -- 3º
 npm install --save @fortawesome/fontawesome-free
+composer require barryvdh/laravel-debugbar --dev
 
 -- IMPORTANT
 php artisan config:cache

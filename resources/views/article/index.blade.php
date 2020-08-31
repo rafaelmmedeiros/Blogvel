@@ -12,7 +12,10 @@
                         <ul class="list-group">
                             @foreach($articles as $article)
                                 <li class="list-group-item">
-                                    <a title="Show Details" href="/article/{{ $article->id }}">{{ $article->title }}</a>
+                                    <b><a title="Show Details" href="/article/{{ $article->id }}">{{ $article->title }}</a></b>
+                                    <span class="mx-2">Posted by: {{ $article->user->name }} </span>
+                                    <span class="mx-2">( x Comments )</span>
+                                    <span class="">{{ $article->created_at->diffForHumans() }}</span>
 
                                     @auth
                                         <a class="btn btn-sm btn-outline-primary float-right ml-2"
@@ -22,7 +25,8 @@
                                               action="/article/{{ $article->id }}" method="post">
                                             @csrf
                                             @method('DELETE')
-                                            <input class="btn btn-sm btn-outline-danger" type="submit" value="Delete">
+                                            <input class="btn btn-sm btn-outline-danger" type="submit"
+                                                   value="Delete">
                                         </form>
                                     @endauth
 
@@ -37,12 +41,12 @@
                 </div>
 
                 @auth
-                <div class="mt-2">
-                    <a class="btn btn-success btn-sm" href="/article/create">
-                        <i class="fas fa-newspaper"></i>
-                        Create new Article
-                    </a>
-                </div>
+                    <div class="mt-2">
+                        <a class="btn btn-success btn-sm" href="/article/create">
+                            <i class="fas fa-newspaper"></i>
+                            Create new Article
+                        </a>
+                    </div>
                 @endauth
 
             </div>
