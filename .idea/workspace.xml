@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Some corrections">
-      <change afterPath="$PROJECT_DIR$/resources/views/article/edit.blade.php" afterDir="false" />
+    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Article Completed CRUD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projeto/Projeto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_projeto/Projeto.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +193,7 @@
       <workItem from="1598294873983" duration="4721000" />
       <workItem from="1598363861573" duration="14645000" />
       <workItem from="1598800625626" duration="179000" />
-      <workItem from="1598800856291" duration="17234000" />
+      <workItem from="1598800856291" duration="17476000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1598291833999</created>
@@ -288,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598828861620</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Article Completed CRUD">
+      <created>1598834756141</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1598834756141</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +324,8 @@
     <MESSAGE value="List Article for blog" />
     <MESSAGE value="Create Article DONE" />
     <MESSAGE value="Some corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some corrections" />
+    <MESSAGE value="Article Completed CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Article Completed CRUD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598382996077">
@@ -334,18 +340,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="658" y="157" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598377645392" />
-    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1598828869844">
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1598834763976">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598828869844" />
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598834763976" />
     <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598823269845">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598823269845" />
-    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup" timestamp="1598831376113">
+    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup" timestamp="1598834772868">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598831376113" />
+    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598834772868" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
