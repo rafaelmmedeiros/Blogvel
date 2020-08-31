@@ -6,14 +6,15 @@ Bootstrap - Done
 Vue - Done
 Initial Route - Done
 CRUD Blog Entity - Done
-
-Rellations - Doing
+Rellations (-Comments) - Done
 
 ----TODO
-Image Upload - Wiil be a challenge...
-CRUD Comments - After all
-User Control - Let´s see laravel power(Roles and guards)
-Filters???
+CRUD Comments - Doing
+Comments Relations
+User Control
+Image Upload
+
 
 - Bonus
 Publish - Maybe...
+Filters???
