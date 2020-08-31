@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Added more information os anticles.index.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/index.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Bug Corrections" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,7 +194,7 @@
       <workItem from="1598363861573" duration="14645000" />
       <workItem from="1598800625626" duration="179000" />
       <workItem from="1598800856291" duration="17521000" />
-      <workItem from="1598879334592" duration="24778000" />
+      <workItem from="1598879334592" duration="25413000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1598291833999</created>
@@ -347,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598909195782</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Bug Corrections">
+      <created>1598914205242</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1598914205242</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +389,8 @@
     <MESSAGE value="Checkpoint" />
     <MESSAGE value="Pagination and @Auth using" />
     <MESSAGE value="Added more information os anticles.index." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more information os anticles.index." />
+    <MESSAGE value="Bug Corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug Corrections" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598382996077">
@@ -401,10 +405,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="570" y="78" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598887975042" />
-    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1598909202939">
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1598914210280">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598909202939" />
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598914210280" />
     <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598823269845">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
