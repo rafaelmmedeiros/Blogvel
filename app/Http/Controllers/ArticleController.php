@@ -60,9 +60,10 @@ class ArticleController extends Controller
         ]);
         $article->save();
 
-        return $this->index()->with([
-            'message_success' => 'Article <b>' . $article->title . ' </b>created with success'
-        ]);
+//        return $this->index()->with([
+//            'message_success' => 'Article <b>' . $article->title . ' </b>created with success'
+//        ]);
+        return redirect('/article');
 
     }
 
@@ -113,9 +114,10 @@ class ArticleController extends Controller
             'description' => $request['description'],
         ]);
 
-        return $this->index()->with([
-            'message_success' => 'Article <b>' . $article->title . ' </b>updated with success'
-        ]);
+//        return $this->index()->with([
+//            'message_success' => 'Article <b>' . $article->title . ' </b>updated with success'
+//        ]);
+        return redirect('/article');
     }
 
     /**
@@ -129,8 +131,9 @@ class ArticleController extends Controller
         $toDelete = $article->title;
         $article->delete();
 
-        return $this->index()->with([
-            'message_success' => 'Article <b>' . $toDelete . ' </b>deleted with success'
-        ]);
+//        return $this->index()->with([
+//            'message_success' => 'Article <b>' . $toDelete . ' </b>deleted with success'
+//        ]);
+        return redirect('/article');
     }
 }

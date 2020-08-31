@@ -12,9 +12,9 @@
                         <ul class="list-group">
                             @foreach($articles as $article)
                                 <li class="list-group-item">
-                                    <b><a title="Show Details" href="/article/{{ $article->id }}">{{ $article->title }}</a></b>
-                                    <span class="mx-2">Posted by: {{ $article->user->name }} </span>
-                                    <span class="mx-2">( x Comments )</span>
+                                    <b><a title="Show Details" href="/article/{{ $article->id }}">{{ $article->title }} - </a></b>
+                                    <span class="">Posted by: {{ $article->user->name }} - </span>
+                                    <span class="">( x Comments ) - </span>
                                     <span class="">{{ $article->created_at->diffForHumans() }}</span>
 
                                     @auth
