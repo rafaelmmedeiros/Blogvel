@@ -13,13 +13,14 @@
                     </div>
 
                 </div>
+
                 <div class="mt-2">
-                    <a class="btn btn-primary float-right" href="/article"><i class="fas fa-arrow-circle-up"></i>
+                    <a class="btn btn-primary float-right" href="{{URL::previous()}}"><i
+                            class="fas fa-arrow-circle-up"></i>
                         Back</a>
                 </div>
 
             </div>
         </div>
-    </div>
     </div>
 @endsection

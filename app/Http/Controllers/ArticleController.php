@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +20,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = Article::all();
+        //$articles = Article::all();
+        $articles = Article::paginate(10);
 
         return view('article.index')->with([
             'articles' => $articles
@@ -47,6 +54,7 @@ class ArticleController extends Controller
         $article = new Article([
             'title' => $request['title'],
             'description' => $request['description'],
+            'user_id' => auth()->id()
         ]);
         $article->save();
 
