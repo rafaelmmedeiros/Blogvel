@@ -77,7 +77,11 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        //
+        //dd($article);
+        //Route Model Bind RMB
+        return view('article.edit')->with([
+            'article' => $article
+        ]);
     }
 
     /**
@@ -89,7 +93,19 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        //
+        $request->validate([
+            'title' => 'required|min:5',
+            'description' => 'required|min:25'
+        ]);
+
+        $article->update([
+            'title' => $request['title'],
+            'description' => $request['description'],
+        ]);
+
+        return $this->index()->with([
+            'message_success' => 'Article <b>' . $article->title . ' </b>updated with success'
+        ]);
     }
 
     /**
@@ -100,6 +116,11 @@ class ArticleController extends Controller
      */
     public function destroy(Article $article)
     {
-        //
+        $toDelete = $article->title;
+        $article->delete();
+
+        return $this->index()->with([
+            'message_success' => 'Article <b>' . $toDelete . ' </b>deleted with success'
+        ]);
     }
 }

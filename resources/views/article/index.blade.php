@@ -12,11 +12,18 @@
                             @foreach($articles as $article)
                                 <li class="list-group-item">
                                     <a title="Show Details" href="/article/{{ $article->id }}">{{ $article->title }}</a>
+                                    <a class="btn btn-sm btn-outline-primary float-right ml-2" href="/article/{{ $article->id }}/edit"><i
+                                            class="fas fa-edit"></i> Edit</a>
+                                    <form class="float-right" style="display: inline"
+                                          action="/article/{{ $article->id }}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input class="btn btn-sm btn-outline-danger" type="submit" value="Delete">
+                                    </form>
                                 </li>
                             @endforeach
                         </ul>
                     </div>
-
 
                 </div>
                 <div class="mt-2">
