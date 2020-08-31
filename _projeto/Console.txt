@@ -11,6 +11,9 @@ npm install
 npm run dev
 npm run watch
 
+-- ADDING EXTRA MIGRATION (TO NOT DROP DATABASE QHEN EXECUTE A NEW MIGRATE)
+php artisan make:migration add_user_id_to_articles_table
+
 -- 3º
 npm install --save @fortawesome/fontawesome-free
 
@@ -19,6 +22,7 @@ php artisan config:cache
 
 - DATABASE
 php artisan migrate
+php artisan migrate:fresh
 
 - Create a Entity with all!
 php artisan make:model Article -a
