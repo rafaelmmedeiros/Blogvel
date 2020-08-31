@@ -23,6 +23,9 @@ php artisan config:cache
 - DATABASE
 php artisan migrate
 php artisan migrate:fresh
+php artisan migrate:fresh --seed
+
+php artisan make:seeder UserSeeder
 
 - Create a Entity with all!
 php artisan make:model Article -a
