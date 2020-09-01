@@ -22,6 +22,7 @@ Route::get('/info', function () {
 });
 
 Route::resource('article', 'ArticleController');
+Route::resource('comment', 'CommentController');
 
 Auth::routes();
 

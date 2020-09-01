@@ -14,11 +14,42 @@
 
                 </div>
 
-                <div class="mt-2">
-                    <a class="btn btn-primary float-right" href="{{URL::previous()}}"><i
-                            class="fas fa-arrow-circle-up"></i>
-                        Back</a>
+                <div class="card bg-transparent mb-1 border-light">
+                    <div class="mt-2">
+                        <div class="btn-group float-right">
+                            @auth
+                                <a class="btn btn-success" href=""><i
+                                        class="fas fa-comment"></i>
+                                    Comment</a>
+                            @endauth
+                            <a class="btn btn-primary ml-2" href="{{URL::previous()}}"><i
+                                    class="fas fa-arrow-circle-up"></i>
+                                Back</a>
+                        </div>
+                    </div>
                 </div>
+
+
+                <div class="card ">
+
+                    @guest()
+                        <div class="card-header">Register to Join the Discussion</div>
+                    @endguest
+
+                    @auth
+                        <div class="card-header">Article Comments ({{$article->comments->count()}})</div>
+
+
+                        @foreach($article->comments as $comment)
+                            <div class="card-body">
+                                <span><b>{{$comment->user->name}}</b> - {{ $comment->created_at->diffForHumans() }}</span>
+                                <p>{{$comment->commentary}}</p>
+                            </div>
+                        @endforeach
+                    @endauth
+
+                </div>
+
 
             </div>
         </div>
