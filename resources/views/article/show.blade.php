@@ -22,7 +22,7 @@
                                         class="fas fa-comment"></i>
                                     Comment</a>
                             @endauth
-                            <a class="btn btn-primary ml-2" href="{{URL::previous()}}"><i
+                            <a class="btn btn-primary ml-2" href="/article"><i
                                     class="fas fa-arrow-circle-up"></i>
                                 Back</a>
                         </div>
@@ -44,6 +44,21 @@
                             <div class="card-body">
                                 <span><b>{{$comment->user->name}}</b> - {{ $comment->created_at->diffForHumans() }}</span>
                                 <p>{{$comment->commentary}}</p>
+
+                                @auth
+                                    <a class="btn btn-sm btn-outline-primary float-right ml-2"
+                                       href="/comment/{{ $comment->id }}/edit">
+                                        <i class="fas fa-edit"></i> Edit</a>
+
+                                    <form class="float-right" style="display: inline"
+                                          action="/comment/{{ $comment->id }}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input class="btn btn-sm btn-outline-danger" type="submit"
+                                               value="Delete">
+                                    </form>
+                                @endauth
+
                             </div>
                         @endforeach
                     @endauth
