@@ -18,7 +18,7 @@
                     <div class="mt-2">
                         <div class="btn-group float-right">
                             @auth
-                                <a class="btn btn-success" href=""><i
+                                <a class="btn btn-success" href="/comment/create/"><i
                                         class="fas fa-comment"></i>
                                     Comment</a>
                             @endauth
