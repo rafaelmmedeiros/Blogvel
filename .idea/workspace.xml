@@ -19,10 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Admin Middleware!! It worked!!">
+    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Admin Policies for Articles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_projeto/Console.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_projeto/Console.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AdminSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdminSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ArticleSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ArticleSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CommentSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CommentSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/article/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599072874070</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Admin Policies for Articles">
+      <created>1599076712617</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1599076712617</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +443,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix2" />
     <MESSAGE value="fix3" />
     <MESSAGE value="fix4" />
     <MESSAGE value="Corrections" />
@@ -457,7 +467,8 @@
     <MESSAGE value="Create Comment with Return" />
     <MESSAGE value="Comment CRUD completo" />
     <MESSAGE value="Admin Middleware!! It worked!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin Middleware!! It worked!!" />
+    <MESSAGE value="Admin Policies for Articles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Policies for Articles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598382996077">
@@ -484,9 +495,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598823269845" />
-    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup" timestamp="1599069633145">
+    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup" timestamp="1599076795396">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599069633145" />
+    <state x="663" y="269" width="840" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599076795396" />
   </component>
 </project>

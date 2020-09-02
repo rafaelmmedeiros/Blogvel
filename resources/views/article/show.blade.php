@@ -8,7 +8,8 @@
                     <div class="card-header">{{ __('Article Detail') }}</div>
 
                     <div class="card-body">
-                        <b>{{$article->title}}</b>
+                        <span><b>{{$article->title}}</b><i>  by: {{$article->user->name}}</i></span>
+                        <br><br>
                         <p>{{$article->description}}</p>
                     </div>
 

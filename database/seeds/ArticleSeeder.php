@@ -11,6 +11,16 @@ class ArticleSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $count = 0;
+
+        while ($count < 30) {
+            $randon = rand(1, 3);
+            factory(App\Article::class, 1)->create(
+                [
+                    'user_id' => $randon
+                ]
+            );
+            $count++;
+        }
     }
 }
