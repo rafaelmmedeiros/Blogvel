@@ -48,7 +48,7 @@ class ArticlePolicy
      */
     public function create(User $user)
     {
-        //
+        return $user->role === 'creator';
     }
 
     /**
@@ -60,7 +60,7 @@ class ArticlePolicy
      */
     public function update(User $user, Article $article)
     {
-        return $user->id === $article->user_id;
+        return $user->role === 'creator' && $article->user_id === $user->id;
     }
 
     /**
@@ -72,7 +72,7 @@ class ArticlePolicy
      */
     public function delete(User $user, Article $article)
     {
-        return $user->id === $article->user_id;
+        return $user->role === 'creator' && $article->user_id === $user->id;
     }
 
     /**
@@ -84,7 +84,7 @@ class ArticlePolicy
      */
     public function restore(User $user, Article $article)
     {
-        //
+        return false;
     }
 
     /**
@@ -96,6 +96,6 @@ class ArticlePolicy
      */
     public function forceDelete(User $user, Article $article)
     {
-        //
+        return false;
     }
 }

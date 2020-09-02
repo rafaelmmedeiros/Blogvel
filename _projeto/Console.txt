@@ -31,8 +31,10 @@ php artisan migrate:fresh --seed
 
 php artisan make:seeder UserSeeder
 php artisan make:seeder AdminSeeder
+php artisan make:seeder CreatorSeeder
 php artisan db:seed --class=AdminSeeder
 php artisan make:middleware AdminMiddleware
+php artisan make:middleware CreatorMiddleware
 
 - Policies
 php artisan make:policy ArticlePolicy --model=Article

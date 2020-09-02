@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class CommentController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except(['index', 'show']);
+        $this->middleware('auth');
     }
 
     /**
@@ -78,6 +79,8 @@ class CommentController extends Controller
      */
     public function edit(Comment $comment)
     {
+        abort_unless(Gate::allows('update', $comment), '403');
+
         return view('comment.edit')->with([
             'comment' => $comment
         ]);
@@ -92,6 +95,8 @@ class CommentController extends Controller
      */
     public function update(Request $request, Comment $comment)
     {
+        abort_unless(Gate::allows('update', $comment), '403');
+
         $articleToReturn = $comment->article_id;
 
         $request->validate([
@@ -113,6 +118,8 @@ class CommentController extends Controller
      */
     public function destroy(Comment $comment)
     {
+        abort_unless(Gate::allows('delete', $comment), '403');
+
         $articleToReturn = $comment->article_id;
         $comment->delete();
 

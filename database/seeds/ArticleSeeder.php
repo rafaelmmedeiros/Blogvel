@@ -13,8 +13,8 @@ class ArticleSeeder extends Seeder
     {
         $count = 0;
 
-        while ($count < 30) {
-            $randon = rand(1, 3);
+        while ($count < 20) {
+            $randon = rand(2, 4);
             factory(App\Article::class, 1)->create(
                 [
                     'user_id' => $randon

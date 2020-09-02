@@ -14,8 +14,8 @@ class CommentSeeder extends Seeder
         $count = 0;
 
         while ($count < 90) {
-            $userRand = rand(1, 13);
-            $articleRand = rand(1, 30);
+            $userRand = rand(1, 14);
+            $articleRand = rand(1, 20);
             factory(App\Comment::class, 1)->create(
                 [
                     'user_id' => $userRand,

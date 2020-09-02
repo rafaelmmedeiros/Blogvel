@@ -19,14 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Admin Policies for Articles">
+    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="New seed.. that is better now.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projeto/Console.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_projeto/Console.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/ArticlePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ArticlePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/CommentPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/CommentPolicy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/AdminSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdminSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/ArticleSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ArticleSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/CommentSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CommentSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -424,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599076712617</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="New seed.. that is better now.">
+      <created>1599079123979</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1599079123979</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +455,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix3" />
     <MESSAGE value="fix4" />
     <MESSAGE value="Corrections" />
     <MESSAGE value="Corrections git" />
@@ -468,17 +479,18 @@
     <MESSAGE value="Comment CRUD completo" />
     <MESSAGE value="Admin Middleware!! It worked!!" />
     <MESSAGE value="Admin Policies for Articles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin Policies for Articles" />
+    <MESSAGE value="New seed.. that is better now." />
+    <option name="LAST_COMMIT_MESSAGE" value="New seed.. that is better now." />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598382996077">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="641" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598382996077" />
-    <state x="624" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599058678540">
+    <state x="624" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599082644789">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="624" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599058678540" />
+    <state x="624" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599082644789" />
     <state x="976" y="411" key="NewPhpFileDialog" timestamp="1598381303520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -487,10 +499,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="570" y="78" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598887975042" />
-    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1599072887452">
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1599079132168">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599072887452" />
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599079132168" />
     <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598823269845">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
-class AdminMiddleware
+class CreatorMiddleware
 {
     /**
      * Handle an incoming request.
@@ -16,8 +16,8 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::user() && auth()->user()->role !== 'admin') {
-            abort(403, "Only for admins.");
+        if(Auth::user() && auth()->user()->role !== 'creator') {
+            abort(403, "Only for Blog Creators.");
         }
 
         return $next($request);
