@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Ckeckpoint">
+    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Create Comment with Relations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/comment/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comment/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -387,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598993090579</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Create Comment with Relations">
+      <created>1599059206916</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1599059206916</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +435,8 @@
     <MESSAGE value="ENTREGA 2 - Checkpoint" />
     <MESSAGE value="Comment BackEnd (-Controller)" />
     <MESSAGE value="Comment Showing in Front End" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comment Showing in Front End" />
+    <MESSAGE value="Create Comment with Relations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Comment with Relations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598382996077">
@@ -449,10 +455,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="570" y="78" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598887975042" />
-    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1598993096087">
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1599059212553">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598993096087" />
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599059212553" />
     <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598823269845">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

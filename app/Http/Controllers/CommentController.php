@@ -37,7 +37,7 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        $articleToReturn = $request->article_id;
+        $articleToReturn = $request['article_id'];
 
         $request->validate([
             'commentary' => 'required|min:5|max:128'
@@ -53,7 +53,8 @@ class CommentController extends Controller
 //        return $this->index()->with([
 //            'message_success' => 'Article <b>' . $article->title . ' </b>created with success'
 //        ]);
-        return redirect('/article');
+        return redirect()->to('article/'.$articleToReturn);
+
     }
 
     /**

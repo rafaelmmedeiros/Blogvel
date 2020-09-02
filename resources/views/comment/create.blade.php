@@ -12,11 +12,10 @@
                     <div class="card-header">Create New Comment</div>
                     <div class="card-body">
 
-
                         <form action="/comment" method="post">
                             @csrf
                             {{--TODO: IMPROVE--}}
-                            <div class="form-group">
+                            <div class="">
                                 <textarea class="invisible"
                                           id="article_id" name="article_id" rows="1">{{$article_id}}</textarea>
                             </div>
@@ -33,7 +32,8 @@
                 </div>
 
                 <div class="mt-2">
-                    <a class="btn btn-primary float-right" href="/article/{{$article_id}}"><i class="fas fa-arrow-circle-up"></i>
+                    <a class="btn btn-primary float-right" href="/article/{{$article_id}}"><i
+                            class="fas fa-arrow-circle-up"></i>
                         Back</a>
                 </div>
 
