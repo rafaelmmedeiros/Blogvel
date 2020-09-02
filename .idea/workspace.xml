@@ -19,13 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Comment CRUD completo">
+    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Admin Middleware!! It worked!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_projeto/Console.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_projeto/Console.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -409,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599062702086</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Admin Middleware!! It worked!!">
+      <created>1599072874070</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1599072874070</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +432,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix" />
     <MESSAGE value="fix2" />
     <MESSAGE value="fix3" />
     <MESSAGE value="fix4" />
@@ -453,7 +456,8 @@
     <MESSAGE value="Create Comment with Relations" />
     <MESSAGE value="Create Comment with Return" />
     <MESSAGE value="Comment CRUD completo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comment CRUD completo" />
+    <MESSAGE value="Admin Middleware!! It worked!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Middleware!! It worked!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598382996077">
@@ -472,10 +476,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="570" y="78" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598887975042" />
-    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1599062707021">
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2" timestamp="1599072887452">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599062707021" />
+    <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599072887452" />
     <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598823269845">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

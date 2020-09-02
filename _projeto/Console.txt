@@ -34,6 +34,11 @@ php artisan make:seeder AdminSeeder
 php artisan db:seed --class=AdminSeeder
 php artisan make:middleware AdminMiddleware
 
+- Policies
+php artisan make:policy ArticlePolicy --model=Article
+php artisan make:policy UserPolicy --model=User
+php artisan make:policy CommentPolicy --model=Comment
+
 - Create a Entity with all!
 php artisan make:model Article -a
 

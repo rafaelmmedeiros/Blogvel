@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class ArticleController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except(['index', 'show']);
+        //$this->middleware('auth')->except(['index', 'show']);
         $this->middleware('admin')->except(['index', 'show']);
     }
 
@@ -88,6 +89,8 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
+        abort_unless(Gate::allows('update', $article), '403');
+
         //dd($article);
         //Route Model Bind RMB
         return view('article.edit')->with([
@@ -104,6 +107,8 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Article $article)
     {
+        abort_unless(Gate::allows('update', $article), '403');
+
         $request->validate([
             'title' => 'required|min:5|max:20',
             'description' => 'required|min:25|max:500'
@@ -128,6 +133,8 @@ class ArticleController extends Controller
      */
     public function destroy(Article $article)
     {
+        abort_unless(Gate::allows('delete', $article), '403');
+
         $toDelete = $article->title;
         $article->delete();
 
