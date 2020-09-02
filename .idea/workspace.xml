@@ -19,11 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Comment Showing in Front End">
-      <change afterPath="$PROJECT_DIR$/resources/views/comment/create.blade.php" afterDir="false" />
+    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Ckeckpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/article/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/comment/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comment/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -436,10 +437,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="641" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598382996077" />
-    <state x="624" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598997865122">
+    <state x="624" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599058678540">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="624" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598997865122" />
+    <state x="624" y="221" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599058678540" />
     <state x="976" y="411" key="NewPhpFileDialog" timestamp="1598381303520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

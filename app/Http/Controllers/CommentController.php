@@ -22,9 +22,11 @@ class CommentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($article_id)
     {
-        return view('comment.create');
+        return view('comment.create')->with([
+            'article_id' => $article_id
+        ]);
     }
 
     /**
@@ -35,7 +37,23 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $articleToReturn = $request->article_id;
+
+        $request->validate([
+            'commentary' => 'required|min:5|max:128'
+        ]);
+
+        $comment = new Comment([
+            'commentary' => $request['commentary'],
+            'article_id' => $request['article_id'],
+            'user_id' => auth()->id()
+        ]);
+        $comment->save();
+
+//        return $this->index()->with([
+//            'message_success' => 'Article <b>' . $article->title . ' </b>created with success'
+//        ]);
+        return redirect('/article');
     }
 
     /**

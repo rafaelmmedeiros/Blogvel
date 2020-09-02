@@ -27,3 +27,7 @@ Route::resource('comment', 'CommentController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// SPECIAL 'GAMBIARRA" CASES
+Route::get('/comment/create/{article_id}', 'CommentController@create');
+
