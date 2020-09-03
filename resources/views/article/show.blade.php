@@ -46,11 +46,13 @@
                                 <span><b>{{$comment->user->name}}</b> - {{ $comment->created_at->diffForHumans() }}</span>
                                 <p>{{$comment->commentary}}</p>
 
-                                @auth
+                                @can('update', $comment)
                                     <a class="btn btn-sm btn-outline-primary float-right ml-2"
                                        href="/comment/{{ $comment->id }}/edit">
                                         <i class="fas fa-edit"></i> Edit</a>
+                                @endcan
 
+                                @can('delete', $comment)
                                     <form class="float-right" style="display: inline"
                                           action="/comment/{{ $comment->id }}" method="post">
                                         @csrf
@@ -58,7 +60,7 @@
                                         <input class="btn btn-sm btn-outline-danger" type="submit"
                                                value="Delete">
                                     </form>
-                                @endauth
+                                @endcan
 
                             </div>
                         @endforeach

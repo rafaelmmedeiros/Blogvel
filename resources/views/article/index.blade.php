@@ -12,15 +12,19 @@
                         <ul class="list-group">
                             @foreach($articles as $article)
                                 <li class="list-group-item">
-                                    <b><a title="Show Details" href="/article/{{ $article->id }}">{{ $article->title }}- </a></b>
+                                    <b><a title="Show Details" href="/article/{{ $article->id }}">{{ $article->title }}
+                                            - </a></b>
                                     <span class="">Posted by: {{ $article->user->name }} - </span>
                                     <span class="">( {{$article->comments->count()}} Comments ) - </span>
                                     <span class="">{{ $article->created_at->diffForHumans() }}</span>
 
-                                    @auth
+                                    @can('update', $article)
                                         <a class="btn btn-sm btn-outline-primary float-right ml-2"
                                            href="/article/{{ $article->id }}/edit"><i
                                                 class="fas fa-edit"></i> Edit</a>
+                                    @endcan
+
+                                    @can('delete', $article)
                                         <form class="float-right" style="display: inline"
                                               action="/article/{{ $article->id }}" method="post">
                                             @csrf
@@ -28,7 +32,7 @@
                                             <input class="btn btn-sm btn-outline-danger" type="submit"
                                                    value="Delete">
                                         </form>
-                                    @endauth
+                                    @endcan
 
                                 </li>
                             @endforeach
@@ -40,14 +44,14 @@
                     {{ $articles->links() }}
                 </div>
 
-                @auth
+                @can('create', $article)
                     <div class="mt-2">
                         <a class="btn btn-success btn-sm" href="/article/create">
                             <i class="fas fa-newspaper"></i>
                             Create new Article
                         </a>
                     </div>
-                @endauth
+                @endcan
 
             </div>
         </div>
