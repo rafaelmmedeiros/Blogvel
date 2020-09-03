@@ -11,9 +11,10 @@
 
                     <div class="card-header">Edit Article</div>
                     <div class="card-body">
-                        <form action="/article/{{$article->id}}" method="post">
+                        <form autocomplete="off" action="/article/{{$article->id}}" method="post" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
+
                             <div class="form-group">
                                 <label for="title">Title</label>
                                 <input type="text"
@@ -21,6 +22,15 @@
                                        id="title" name="title" value="{{$article->title ?? old('title')}}">
                                 <small class="form-text text-danger">{!! $errors->first('title') !!}</small>
                             </div>
+
+                            <div class="form-group">
+                                <label for="image">Image: (max: 2MB)</label>
+                                <input type="file"
+                                       class="form-control{{ $errors->has('image') ? ' border-danger' : '' }}"
+                                       id="image" name="image" value="">
+                                <small class="form-text text-danger">{!! $errors->first('image') !!}</small>
+                            </div>
+
                             <div class="form-group">
                                 <label for="description">Description</label>
                                 <textarea class="form-control{{ $errors->has('description') ? ' border-danger' : '' }}"
@@ -28,7 +38,9 @@
                                           rows="5">{{$article->description ??old('description')}}</textarea>
                                 <small class="form-text text-danger">{!! $errors->first('description') !!}</small>
                             </div>
+
                             <input class="btn btn-primary mt-4" type="submit" value="Save Article">
+
                         </form>
 
                     </div>

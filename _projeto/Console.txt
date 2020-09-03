@@ -8,7 +8,9 @@ npm run watch
 composer require laravel/ui
 php artisan ui vue --auth
 npm install
+
 npm run dev
+ou
 npm run watch
 
 -- ADDING EXTRA MIGRATION (TO NOT DROP DATABASE QHEN EXECUTE A NEW MIGRATE)
@@ -18,6 +20,8 @@ php artisan make:migration add_role_to_users_table --table=users
 -- 3º
 npm install --save @fortawesome/fontawesome-free
 composer require barryvdh/laravel-debugbar --dev
+npm install lightbox2 --save
+composer require intervention/image
 
 -- IMPORTANT
 php artisan config:cache

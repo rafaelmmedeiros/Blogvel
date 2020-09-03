@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Article;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Intervention\Image\Facades\Image;
 
 class ArticleController extends Controller
 {
@@ -112,9 +113,20 @@ class ArticleController extends Controller
     {
         abort_unless(Gate::allows('update', $article), '403');
 
+        if($request->image) {
+            $image = Image::make($request->image);
+            if($image->width() > $image->height()){
+                dd("landscape");
+            } else {
+                dd("portrait");
+            }
+        }
+
+
         $request->validate([
             'title' => 'required|min:5|max:20',
-            'description' => 'required|min:25|max:500'
+            'description' => 'required|min:25|max:500',
+            'image' => 'mimes:jpeg,jpg,bmp,png,gif'
         ]);
 
         $article->update([
