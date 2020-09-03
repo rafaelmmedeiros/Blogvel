@@ -55,7 +55,8 @@ class ArticleController extends Controller
 
         $request->validate([
             'title' => 'required|min:5|max:20',
-            'description' => 'required|min:25|max:500'
+            'description' => 'required|min:25|max:500',
+            'image' => 'mimes:jpeg,jpg,bmp,png,gif'
         ]);
 
         $article = new Article([
@@ -65,9 +66,10 @@ class ArticleController extends Controller
         ]);
         $article->save();
 
-//        return $this->index()->with([
-//            'message_success' => 'Article <b>' . $article->title . ' </b>created with success'
-//        ]);
+        if ($request->image) {
+            $this->saveImages($request->image, $article->id);
+        }
+
         return redirect('/article');
 
     }
@@ -113,30 +115,21 @@ class ArticleController extends Controller
     {
         abort_unless(Gate::allows('update', $article), '403');
 
-        if($request->image) {
-            $image = Image::make($request->image);
-            if($image->width() > $image->height()){
-                dd("landscape");
-            } else {
-                dd("portrait");
-            }
-        }
-
-
         $request->validate([
             'title' => 'required|min:5|max:20',
             'description' => 'required|min:25|max:500',
             'image' => 'mimes:jpeg,jpg,bmp,png,gif'
         ]);
 
+        if ($request->image) {
+            $this->saveImages($request->image, $article->id);
+        }
+
         $article->update([
             'title' => $request['title'],
             'description' => $request['description'],
         ]);
 
-//        return $this->index()->with([
-//            'message_success' => 'Article <b>' . $article->title . ' </b>updated with success'
-//        ]);
         return redirect('/article');
     }
 
@@ -153,9 +146,32 @@ class ArticleController extends Controller
         $toDelete = $article->title;
         $article->delete();
 
-//        return $this->index()->with([
-//            'message_success' => 'Article <b>' . $toDelete . ' </b>deleted with success'
-//        ]);
         return redirect('/article');
+    }
+
+    public function saveImages($image, $article_id)
+    {
+        $image = Image::make($image);
+        if ($image->width() > $image->height()) {
+            $image
+                ->widen('1200')
+                ->save(public_path() . '/img/articles/' . $article_id . "_large.jpg")
+                ->widen('400')->pixelate(10)
+                ->save(public_path() . '/img/articles/' . $article_id . "_pixelated.jpg");
+            $image = Image::make($image);
+            $image
+                ->widen('60')
+                ->save(public_path() . '/img/articles/' . $article_id . "_thumb.jpg");
+        } else {
+            $image
+                ->heighten('900')
+                ->save(public_path() . '/img/articles/' . $article_id . "_large.jpg")
+                ->heighten('400')->pixelate(10)
+                ->save(public_path() . '/img/articles/' . $article_id . "_pixelated.jpg");
+            $image = Image::make($image);
+            $image
+                ->heighten('60')
+                ->save(public_path() . '/img/articles/' . $article_id . "_thumb.jpg");
+        }
     }
 }
