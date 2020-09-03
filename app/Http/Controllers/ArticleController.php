@@ -10,8 +10,8 @@ class ArticleController extends Controller
 {
     public function __construct()
     {
-        //$this->middleware('auth')->except(['index', 'show']);
-        $this->middleware('creator')->except(['index', 'show']);
+        $this->middleware('auth')->except(['index', 'show']);
+        $this->middleware('admin')->except(['index', 'show']);
     }
 
     /**
@@ -38,6 +38,8 @@ class ArticleController extends Controller
      */
     public function create()
     {
+        //abort_unless(Gate::allows('create'), 403);
+
         return view('article.create');
     }
 
@@ -49,6 +51,7 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
             'title' => 'required|min:5|max:20',
             'description' => 'required|min:25|max:500'

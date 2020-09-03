@@ -15,8 +15,41 @@ class AdminSeeder extends Seeder
     public function run()
     {
         $admin = new User([
-            'name' => 'Rafael (Admin)',
+            'name' => 'Rafael Medeiros',
             'email' => 'rafael@example.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('admin1234'),
+            'remember_token' => Str::random(10),
+            'role' => 'admin'
+        ]);
+
+        $admin->save();
+
+        $admin = new User([
+            'name' => 'Vanessa Ives',
+            'email' => 'vanessa@example.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('admin1234'),
+            'remember_token' => Str::random(10),
+            'role' => 'admin'
+        ]);
+
+        $admin->save();
+
+        $admin = new User([
+            'name' => 'Mario Guttenberg',
+            'email' => 'mario@example.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('admin1234'),
+            'remember_token' => Str::random(10),
+            'role' => 'admin'
+        ]);
+
+        $admin->save();
+
+        $admin = new User([
+            'name' => 'Camila Amaral',
+            'email' => 'camila@example.com',
             'email_verified_at' => now(),
             'password' => Hash::make('admin1234'),
             'remember_token' => Str::random(10),

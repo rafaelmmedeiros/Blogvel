@@ -48,7 +48,7 @@ class ArticlePolicy
      */
     public function create(User $user)
     {
-        return $user->role === 'creator';
+        return false;
     }
 
     /**
@@ -60,7 +60,7 @@ class ArticlePolicy
      */
     public function update(User $user, Article $article)
     {
-        return $user->role === 'creator' && $article->user_id === $user->id;
+        return false;
     }
 
     /**
@@ -72,7 +72,7 @@ class ArticlePolicy
      */
     public function delete(User $user, Article $article)
     {
-        return $user->role === 'creator' && $article->user_id === $user->id;
+        return false;
     }
 
     /**
