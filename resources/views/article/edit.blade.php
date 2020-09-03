@@ -11,7 +11,8 @@
 
                     <div class="card-header">Edit Article</div>
                     <div class="card-body">
-                        <form autocomplete="off" action="/article/{{$article->id}}" method="post" enctype="multipart/form-data">
+                        <form autocomplete="off" action="/article/{{$article->id}}" method="post"
+                              enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
 
@@ -21,6 +22,13 @@
                                        class="form-control{{ $errors->has('title') ? ' border-danger' : '' }}"
                                        id="title" name="title" value="{{$article->title ?? old('title')}}">
                                 <small class="form-text text-danger">{!! $errors->first('title') !!}</small>
+                            </div>
+
+                            <div class="mb-2">
+                                @if(file_exists('img/articles/' . $article->id . '_large.jpg'))
+                                    <img style="max-width: 280px; max-height: 210px"
+                                         src="/img/articles/{{ $article->id }}_large.jpg" alt="">
+                                @endif
                             </div>
 
                             <div class="form-group">

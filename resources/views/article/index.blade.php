@@ -12,9 +12,16 @@
                         <ul class="list-group">
                             @foreach($articles as $article)
                                 <li class="list-group-item">
-                                    <b><a title="Show Details" href="/article/{{ $article->id }}">
-                                            <img src="/img/thumb_landscape.jpg" alt="thumb"> {{ $article->title }}
-                                            - </a></b>
+
+                                    @if(file_exists('img/articles/' . $article->id . '_thumb.jpg'))
+                                        <a title="Show Details" href="/article/{{ $article->id }}">
+                                            <img src="/img/articles/{{ $article->id }}_thumb.jpg"
+                                                 alt="Article Thumb"></a>
+                                    @endif
+                                    <a title="Show Details" href="/article/{{ $article->id }}">
+                                        <b>{{ $article->title }}</b>
+                                        - </a>
+
                                     <span class="">Posted by: {{ $article->user->name }} - </span>
                                     <span class="">( {{$article->comments->count()}} Comments ) - </span>
                                     <span class="">{{ $article->created_at->diffForHumans() }}</span>
