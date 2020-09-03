@@ -12,7 +12,8 @@
                         <ul class="list-group">
                             @foreach($articles as $article)
                                 <li class="list-group-item">
-                                    <b><a title="Show Details" href="/article/{{ $article->id }}">{{ $article->title }}
+                                    <b><a title="Show Details" href="/article/{{ $article->id }}">
+                                            <img src="/img/thumb_landscape.jpg" alt="thumb"> {{ $article->title }}
                                             - </a></b>
                                     <span class="">Posted by: {{ $article->user->name }} - </span>
                                     <span class="">( {{$article->comments->count()}} Comments ) - </span>
