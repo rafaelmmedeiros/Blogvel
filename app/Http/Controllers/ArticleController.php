@@ -174,4 +174,16 @@ class ArticleController extends Controller
                 ->save(public_path() . '/img/articles/' . $article_id . "_thumb.jpg");
         }
     }
+
+    public function deleteImages($article_id)
+    {
+        if (file_exists(public_path() . '/img/articles/' . $article_id . "_large.jpg"))
+            unlink(public_path() . '/img/articles/' . $article_id . "_large.jpg");
+        if (file_exists(public_path() . '/img/articles/' . $article_id . "_thumb.jpg"))
+            unlink(public_path() . '/img/articles/' . $article_id . "_thumb.jpg");
+        if (file_exists(public_path() . '/img/articles/' . $article_id . "_pixelated.jpg"))
+            unlink(public_path() . '/img/articles/' . $article_id . "_pixelated.jpg");
+
+        return back();
+    }
 }

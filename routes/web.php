@@ -28,6 +28,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// SPECIAL 'GAMBIARRA" CASES
+// CREATING COMMENT
 Route::get('/comment/create/{article_id}', 'CommentController@create');
 
+// DELETING IMAGE
+Route::get('/image/delete/{article_id}', 'ArticleController@deleteImages');

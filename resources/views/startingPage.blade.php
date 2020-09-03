@@ -10,7 +10,10 @@
                 <div class="card-body">
 
 
-                    {{ __('Here goes your last article!!!') }}
+                    <h1 class="display-1 text-center" >
+                        <i class="fas fa-table"></i>
+                        Blogvel</h1>
+
                 </div>
             </div>
         </div>

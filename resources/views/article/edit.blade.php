@@ -24,12 +24,15 @@
                                 <small class="form-text text-danger">{!! $errors->first('title') !!}</small>
                             </div>
 
-                            <div class="mb-2">
-                                @if(file_exists('img/articles/' . $article->id . '_large.jpg'))
+                            @if(file_exists('img/articles/' . $article->id . '_large.jpg'))
+                                <div class="mb-2">
+
                                     <img style="max-width: 280px; max-height: 210px"
                                          src="/img/articles/{{ $article->id }}_large.jpg" alt="">
-                                @endif
-                            </div>
+                                    <a class="btn btn-sm btn-outline-danger float-right" href="/image/delete/{{$article->id}}">Delete Picture</a>
+
+                                </div>
+                            @endif
 
                             <div class="form-group">
                                 <label for="image">Image: (max: 2MB)</label>

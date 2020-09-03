@@ -19,11 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Save image finished">
+    <list default="true" id="8c1cf765-1d5b-45bc-b449-020a7893ce77" name="Default Changelist" comment="Images for all">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/article/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/article/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/startingPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startingPage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +205,7 @@
       <workItem from="1598879334592" duration="25699000" />
       <workItem from="1598985738007" duration="11824000" />
       <workItem from="1599048476271" duration="1268000" />
-      <workItem from="1599138713776" duration="18827000" />
+      <workItem from="1599138713776" duration="23396000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1598291833999</created>
@@ -465,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599160184365</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Images for all">
+      <created>1599165875902</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1599165875902</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +492,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create Article DONE" />
     <MESSAGE value="Some corrections" />
     <MESSAGE value="Article Completed CRUD" />
     <MESSAGE value="Projeto TODO updated" />
@@ -509,7 +516,8 @@
     <MESSAGE value="Imagem Placeholders" />
     <MESSAGE value="Imagem fron end uplaod" />
     <MESSAGE value="Save image finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save image finished" />
+    <MESSAGE value="Images for all" />
+    <option name="LAST_COMMIT_MESSAGE" value="Images for all" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="191" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598382996077">
@@ -532,11 +540,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="570" y="78" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598887975042" />
-    <state x="483" y="210" key="Vcs.Push.Dialog.v2" timestamp="1599160192131">
+    <state x="483" y="210" key="Vcs.Push.Dialog.v2" timestamp="1599165883574">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="483" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599079132168" />
-    <state x="483" y="210" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1599160192131" />
+    <state x="483" y="210" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1599165883574" />
     <state x="808" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598823269845">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
